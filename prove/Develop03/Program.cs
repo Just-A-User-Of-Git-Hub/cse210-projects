@@ -45,7 +45,7 @@ class Program
         string text9 ="“Choose you this day whom ye will serve.”";
         string text10 ="“Who shall stand in his holy place? He that hath clean hands, and a pure heart.”";
         string text11 ="“Trust in the Lord with all thine heart … and he shall direct thy paths.”";
-        string text12 ="“Trust in the Lord with all thine heart … and he shall direct thy paths.”";
+        string text12 ="“Though your sins be as scarlet, they shall be as white as snow.”";
 
         List<string> textLibrary =
         [
@@ -63,6 +63,9 @@ class Program
             text12,
         ];
     
+    // The program exceeds the requirements by choosing a random scripture from a library as opposed to only one scripture.
+    // Note: These are seminary doctrinal mastery verses for the 2026 spring semester.
+
         Random random = new Random();
         int index = random.Next(0,12);
 
