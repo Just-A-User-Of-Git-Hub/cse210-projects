@@ -37,11 +37,8 @@ public class LargeGoal : Goal
     {
         return _isComplete;
     }
-    public override void Save(string filename)
+    public override string Save(string filename)
     {
-        using (StreamWriter outputFile = new StreamWriter(filename, true))
-        {
-            outputFile.WriteLine($"LargeGoal~|~{_name}~|~{_description}~|~{_points}~|~{_isComplete}~|~{_finalPoints}");
-        }
+        return $"LargeGoal~|~{_name}~|~{_description}~|~{_points}~|~{_isComplete}~|~{_finalPoints}";
     }
 }

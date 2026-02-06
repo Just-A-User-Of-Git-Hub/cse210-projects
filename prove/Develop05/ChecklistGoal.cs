@@ -34,12 +34,9 @@ public class ChecklistGoal : Goal
             return false;
         }
     }
-    public override void Save(string filename)
+    public override string Save(string filename)
     {
-        using (StreamWriter outputFile = new StreamWriter(filename, true))
-        {
-            outputFile.WriteLine($"ChecklistGoal~|~{_name}~|~{_description}~|~{_points}~|~{_completions}~|~{_completionsNeeded}~|~{_bonusPoints}");
-        }
+        return $"ChecklistGoal~|~{_name}~|~{_description}~|~{_points}~|~{_completions}~|~{_completionsNeeded}~|~{_bonusPoints}";
     }
     public override string GetDetails()
     {

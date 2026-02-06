@@ -14,11 +14,8 @@ public class EternalGoal : Goal
     {
         return false;
     }
-    public override void Save(string filename)
+    public override string Save(string filename)
     {
-        using (StreamWriter outputFile = new StreamWriter(filename, true))
-        {
-            outputFile.WriteLine($"EternalGoal~|~{_name}~|~{_description}~|~{_points}");
-        }
+        return $"EternalGoal~|~{_name}~|~{_description}~|~{_points}";
     }
 }

@@ -157,11 +157,11 @@ class Program
                 string filename = Console.ReadLine();
                 using (StreamWriter outputFile = new StreamWriter(filename))
                 {
-                outputFile.WriteLine(userPoints);
-                }
-                foreach(Goal goal in goals)
-                {
-                    goal.Save(filename);
+                    outputFile.WriteLine(userPoints);
+                    foreach(Goal goal in goals)
+                    {
+                        outputFile.WriteLine(goal.Save(filename));
+                    }
                 }
             }
             else if(input == 4)
