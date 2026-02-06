@@ -34,7 +34,7 @@ public class ChecklistGoal : Goal
             return false;
         }
     }
-    public override string Save(string filename)
+    public override string Save()
     {
         return $"ChecklistGoal~|~{_name}~|~{_description}~|~{_points}~|~{_completions}~|~{_completionsNeeded}~|~{_bonusPoints}";
     }

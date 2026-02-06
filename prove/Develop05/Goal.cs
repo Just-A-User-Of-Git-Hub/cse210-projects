@@ -15,7 +15,7 @@ public abstract class Goal
 
     public abstract int RecordEvent();
     public abstract bool IsComplete();
-    public abstract string Save(string filename);
+    public abstract string Save();
     public virtual string GetDetails()
     {
         return $"{_name} ({_description})";

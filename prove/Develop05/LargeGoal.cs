@@ -37,7 +37,7 @@ public class LargeGoal : Goal
     {
         return _isComplete;
     }
-    public override string Save(string filename)
+    public override string Save()
     {
         return $"LargeGoal~|~{_name}~|~{_description}~|~{_points}~|~{_isComplete}~|~{_finalPoints}";
     }

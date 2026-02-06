@@ -14,7 +14,7 @@ public class EternalGoal : Goal
     {
         return false;
     }
-    public override string Save(string filename)
+    public override string Save()
     {
         return $"EternalGoal~|~{_name}~|~{_description}~|~{_points}";
     }

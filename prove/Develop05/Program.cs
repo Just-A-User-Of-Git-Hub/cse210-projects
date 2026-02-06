@@ -160,7 +160,7 @@ class Program
                     outputFile.WriteLine(userPoints);
                     foreach(Goal goal in goals)
                     {
-                        outputFile.WriteLine(goal.Save(filename));
+                        outputFile.WriteLine(goal.Save());
                     }
                 }
             }
